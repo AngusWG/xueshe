@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/tv标题"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="标题" />
+
+    <EditText
+        android:id="@+id/tv价格"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="价格"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/tv描述"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:text="描述" />
+
+
+    <EditText
+        android:id="@+id/tv联系QQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QQ" />
+
+    <EditText
+        android:id="@+id/tv联系电话"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="tv联系电话" />
+
+    <Button
+        android:id="@+id/btn上传图片"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上传图片" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon_main" />
+
+    <Button
+        android:id="@+id/btn提交"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交" />
+
+
+</LinearLayout>

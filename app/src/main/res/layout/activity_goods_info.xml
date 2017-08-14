@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/image展示图片"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        app:srcCompat="@drawable/icon_main" />
+
+    <TextView
+        android:id="@+id/tv标题"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:textSize="@dimen/titleSize"
+        android:padding="@dimen/paddingSize" />
+
+    <TextView
+        android:id="@+id/tv创建时间"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="创建时间"
+        android:gravity="end" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv价格"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格"
+            android:padding="@dimen/paddingSize"
+            android:textSize="@dimen/titleSize" />
+
+        <ImageButton
+            android:id="@+id/img创建者头像"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/paddingSize"
+            app:srcCompat="@drawable/ic_perm_identity_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:dividerPadding="@dimen/paddingSize">
+
+            <TextView
+                android:id="@+id/tv创建者"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="创建者name" />
+
+            <TextView
+                android:id="@+id/tvTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="电话" />
+
+            <TextView
+                android:id="@+id/tvQQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="QQ" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv描述"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="@dimen/paddingSize"
+        android:text="详情（描述）" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#40B35e</color>
+    <color name="colorPrimaryDark">#2b6447</color>
+    <color name="colorAccent">#45b97c</color>
+    <color name="primary_dark">#73b9e2</color>
+    <color name="primary_darker">#45b97c</color>
+    <color name="background">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="text">#000000</color>
+
+    <style name="fab_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        //文字背景的样式
+        <item name="android:textColor">@color/black</item>
+        //文字的颜色
+    </style>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="white_pressed">#ffffff</color>
+</resources>

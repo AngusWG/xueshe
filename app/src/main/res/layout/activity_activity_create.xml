@@ -1,0 +1,129 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="cn.huas.xueshe.activity.activity.creatActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/标题edtTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="标题："
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/内容edtTxt"
+            android:layout_width="match_parent"
+            android:layout_height="342dp"
+            android:gravity="top"
+            android:hint="描述："
+            android:inputType="textMultiLine" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/开始时间edtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:hint="开始时间"
+                    android:inputType="textPersonName"
+
+                    android:onClick="selectDate" />
+
+                <EditText
+                    android:id="@+id/结束时间edtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:hint="结束时间"
+                    android:inputType="textPersonName"
+
+                    android:onClick="selectDate" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/期望人数edtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="期待人数"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/已有人数edtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="已有人数"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/联系电话edtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="联系电话"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/联系QQedtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="联系QQ"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/地点edtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:hint="地点"
+                    android:inputType="textPersonName" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/提交btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Submit"
+            android:text="提交"
+
+            />
+
+    </LinearLayout>
+</ScrollView>
